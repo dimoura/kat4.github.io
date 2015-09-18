@@ -10,7 +10,6 @@ body {
   text-align: center;
   border-top: #2f4f4f solid 0.1em ;
   border-bottom: #2f4f4f solid 0.1em;
-  overflow: auto;
   padding-bottom: 1em;
 }
 
@@ -27,8 +26,10 @@ body {
 }
 
 .profile-bio {
-  display: inline-block;
+  display: block;
   cursor: pointer;
+  width: 25%;
+  float:left;
 }
 
 .profile-bio.active .mini-profile {
@@ -118,4 +119,10 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
     height: 1%;
+}
+
+@media (max-width: 950px){
+  .profile-bio {
+    width: 50%;
+  }
 }
